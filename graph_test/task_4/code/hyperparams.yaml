@@ -1,0 +1,33 @@
+# 任务四（知识图谱补全）超参数
+
+defaults:
+  embed_dim: 200
+  margin: 1.0
+  dropout: 0.2
+  lr: 0.001
+  weight_decay: 0.0
+  epochs: 200
+  batch_size: 1024
+  num_neg: 1
+  eval_every: 20
+  seed: 42
+
+datasets:
+  - fb15k-237
+  - wn18rr
+
+models:
+  - transe
+  - rotate
+  - conve
+
+# Part B：学习率 / 嵌入维度敏感性
+param_lrs:
+  - 0.0001
+  - 0.001
+  - 0.01
+
+param_embed_dims:
+  - 100
+  - 200
+  - 400

@@ -1,0 +1,36 @@
+{
+  "dataset": "FB15k-237",
+  "model": "rotate",
+  "embed_dim": 200,
+  "margin": 1.0,
+  "dropout": 0.2,
+  "lr": 0.001,
+  "epochs": 1,
+  "batch_size": 512,
+  "num_neg": 1,
+  "best_epoch": 1,
+  "train_time_sec": 9.802559800009476,
+  "device": "cuda",
+  "best_val_mrr": 0.012668004259467125,
+  "best_val_hits1": 0.0,
+  "best_val_hits3": 0.0,
+  "best_val_hits10": 0.05000000074505806,
+  "best_test_mrr": 0.05161961168050766,
+  "best_test_hits1": 0.05000000074505806,
+  "best_test_hits3": 0.05000000074505806,
+  "best_test_hits10": 0.05000000074505806,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 3.2073598033503483,
+      "val_mrr": 0.012668004259467125,
+      "val_hits1": 0.0,
+      "val_hits3": 0.0,
+      "val_hits10": 0.05000000074505806,
+      "test_mrr": 0.05161961168050766,
+      "test_hits1": 0.05000000074505806,
+      "test_hits3": 0.05000000074505806,
+      "test_hits10": 0.05000000074505806
+    }
+  ]
+}

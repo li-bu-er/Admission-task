@@ -1,0 +1,41 @@
+# 任务二（链路预测）超参数
+
+defaults:
+  hidden: 64
+  out_dim: 64
+  num_layers: 2
+  dropout: 0.5
+  lr: 0.01
+  weight_decay: 0.0005
+  epochs: 200
+  flickr_epochs: 50
+  batch_size: 512
+  heads: 4
+  seed: 42
+
+datasets:
+  - cora
+  - citeseer
+  - flickr
+
+models:
+  - gcn
+  - gat
+  - graphsage
+  - gin
+
+modes:
+  - full
+  - sample
+
+# Part B：学习率 / 层数敏感性
+param_lrs:
+  - 0.001
+  - 0.01
+  - 0.05
+
+param_num_layers:
+  - 1
+  - 2
+  - 3
+  - 4

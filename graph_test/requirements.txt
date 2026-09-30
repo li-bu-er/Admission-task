@@ -1,0 +1,11 @@
+# 图神经网络项目依赖
+# Python (3.11)
+# torch （2.11.0+cu128）需单独安装
+# NeighborLoader 采样依赖 pyg-lib（或 torch-sparse），按 torch/CUDA 版本安装：
+#   pip install pyg_lib -f https://data.pyg.org/whl/torch-2.11.0+cu128.html
+torch-geometric>=2.8.0
+numpy>=1.23.0
+tqdm>=4.65.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+PyYAML>=6.0

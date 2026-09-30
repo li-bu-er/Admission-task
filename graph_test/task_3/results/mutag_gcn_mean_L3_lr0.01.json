@@ -1,0 +1,55 @@
+{
+  "dataset": "MUTAG",
+  "task": "classification",
+  "model": "gcn",
+  "pool": "mean",
+  "hidden_dim": 64,
+  "embed_dim": 64,
+  "num_layers": 3,
+  "lr": 0.01,
+  "dropout": 0.5,
+  "epochs": 5,
+  "batch_size": 64,
+  "best_epoch": 5,
+  "val_acc": 0.6842105263157895,
+  "best_test_acc": 0.6842105263157895,
+  "train_time_sec": 0.5465865000005579,
+  "device": "cuda",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.637104693253835,
+      "train_acc": 0.66,
+      "val_acc": 0.6842105263157895,
+      "test_acc": 0.6842105263157895
+    },
+    {
+      "epoch": 2,
+      "loss": 0.6552463912963867,
+      "train_acc": 0.66,
+      "val_acc": 0.6842105263157895,
+      "test_acc": 0.6842105263157895
+    },
+    {
+      "epoch": 3,
+      "loss": 0.627258632183075,
+      "train_acc": 0.66,
+      "val_acc": 0.6842105263157895,
+      "test_acc": 0.6842105263157895
+    },
+    {
+      "epoch": 4,
+      "loss": 0.6142812911669413,
+      "train_acc": 0.66,
+      "val_acc": 0.6842105263157895,
+      "test_acc": 0.6842105263157895
+    },
+    {
+      "epoch": 5,
+      "loss": 0.6033732215563457,
+      "train_acc": 0.66,
+      "val_acc": 0.6842105263157895,
+      "test_acc": 0.6842105263157895
+    }
+  ]
+}

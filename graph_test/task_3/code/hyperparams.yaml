@@ -1,0 +1,42 @@
+# 任务三（图分类）超参数
+
+defaults:
+  hidden: 64
+  embed_dim: 64
+  num_layers: 3
+  dropout: 0.5
+  lr: 0.01
+  weight_decay: 0.0005
+  epochs: 200
+  zinc_epochs: 100
+  batch_size: 64
+  heads: 4
+  seed: 42
+
+datasets:
+  - mutag
+  - proteins
+  - imdb-binary
+  - zinc
+
+models:
+  - gcn
+  - gat
+  - graphsage
+  - gin
+
+pools:
+  - mean
+  - max
+  - min
+
+# Part B：池化 / 学习率敏感性
+param_pools:
+  - mean
+  - max
+  - min
+
+param_lrs:
+  - 0.001
+  - 0.01
+  - 0.05

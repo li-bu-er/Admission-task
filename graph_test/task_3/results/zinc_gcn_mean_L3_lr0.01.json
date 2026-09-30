@@ -1,0 +1,32 @@
+{
+  "dataset": "ZINC",
+  "task": "regression",
+  "model": "gcn",
+  "pool": "mean",
+  "hidden_dim": 64,
+  "embed_dim": 64,
+  "num_layers": 3,
+  "lr": 0.01,
+  "dropout": 0.5,
+  "epochs": 2,
+  "batch_size": 64,
+  "best_epoch": 2,
+  "val_mae": 0.6619368195533752,
+  "best_test_mae": 0.720084011554718,
+  "train_time_sec": 5.486247699998785,
+  "device": "cuda",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.0132508666992188,
+      "val_mae": 0.6787682771682739,
+      "test_mae": 0.7397223711013794
+    },
+    {
+      "epoch": 2,
+      "loss": 0.7735418008804321,
+      "val_mae": 0.6619368195533752,
+      "test_mae": 0.720084011554718
+    }
+  ]
+}
